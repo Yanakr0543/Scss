@@ -1,0 +1,86 @@
+$primary-color:  #fff;
+$secondary-color: #000;
+$nv-color: #4caf50;
+$hover-color:  #e91e63;
+$cont-color: #1d1f20;
+$a-color: #673ab7;
+$width: 25%;
+     
+
+body {
+  color: $secondary-color;
+  font-size: 16px;
+  line-height: 1;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: $width* 4;
+    padding: 0 15px;
+    background-color: $nv-color;
+
+    $ {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+       $>li {
+        margin-right: 10px;
+        font-size: 1.125em;
+        font-weight: 600;
+
+       $ .active> $:hover {
+          color: #$primary-color;
+          background-color: $hover-color;
+       }
+       $ .active> a,$:hover>a {
+          color: inherit;
+       }
+       $>a {
+          display: block;
+          color: $a-color;
+          font-size: 0.75em;
+          line-height: 1.4;
+       }
+      }
+    }
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    $-item {
+      width: 25%;
+      text-align: center;
+
+      img {
+        display: block;
+        max-width: $width * 4;
+        border-radius: 50%;
+      }
+    }
+  }
+.contacts {
+  color: $primary-color;
+  background-color: $cont-color;
+
+  $ a {
+    display: inline-block;
+    padding: 5px;
+    color: inherit;
+    text-decoration: none;
+
+    $:hover {
+      text-decoration: underline;
+    }
+  }
+}
+  
+	  
